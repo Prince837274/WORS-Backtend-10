@@ -40,7 +40,7 @@ import com.rays.service.UserServiceInt;
  * operations
  * 
  * 
- * SANAT KUMAR CHOUHAN
+ *Prince Bharti
  */
 @RestController
 @RequestMapping(value = "Auth")

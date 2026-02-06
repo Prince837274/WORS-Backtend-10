@@ -18,7 +18,7 @@ import com.rays.service.CourseServiceInt;
 
 
 /**
- * SANAT KUMAR CHOUHAN 
+ *Prince Bharti 
  *
  */
 @RestController

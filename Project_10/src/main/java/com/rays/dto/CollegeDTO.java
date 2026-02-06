@@ -10,7 +10,7 @@ import com.rays.common.BaseDTO;
 
 /**
  * College DTO class
- * SANAT KUMAR CHOUHAN 
+ *Prince Bharti 
  */
 
 @Entity

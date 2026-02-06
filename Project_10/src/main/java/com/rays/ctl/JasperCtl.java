@@ -41,12 +41,12 @@ import net.sf.jasperreports.engine.JasperReport;
  * Jasper functionality Controller. Performs operation for Print pdf of
  * MarksheetMeriteList
  *
- * @author SANAT KUMAR CHOUHAN
+ * @authorPrince Bharti
  */
 /**
  * The Class JasperCtl.
  * 
- * SANAT KUMAR CHOUHAN
+ *Prince Bharti
  */
 
 @Transactional

@@ -8,8 +8,9 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 import com.rays.common.BaseDTO;
+
 /**
- * SANAT KUMAR CHOUHAN 
+ * Prince Bharti
  *
  */
 @Entity
@@ -18,22 +19,22 @@ public class FacultyDTO extends BaseDTO {
 
 	@Column(name = "FIRST_NAME", length = 50)
 	private String firstName;
-	
+
 	@Column(name = "LAST_NAME", length = 50)
 	private String lastName;
-	
+
 	@Column(name = "DOB")
 	private Date dob;
-	
+
 	@Column(name = "GENDER", length = 10)
 	private String gender;
-	
+
 	@Column(name = "PHONE_NO", length = 15)
 	private String phoneNo;
-	
+
 	@Column(name = "QUALIFICATION", length = 15)
 	private String qualification;
-	
+
 	public String getQualification() {
 		return qualification;
 	}
@@ -50,22 +51,22 @@ public class FacultyDTO extends BaseDTO {
 
 	@Column(name = "SUBJECT_NAME", length = 50)
 	private String subjectName;
-	
+
 	@Column(name = "COURSE_ID", length = 50)
 	private long courseId;
 
 	@Column(name = "COURSE_NAME", length = 50)
 	private String courseName;
-	
+
 	@Column(name = "COLLEGE_NAME", length = 50)
 	private String collegeName;
 
 	@Column(name = "COLLEGE_ID", length = 50)
 	private long collegeId;
-	
+
 	@Column(name = "FACULTY_ID", length = 50)
 	private String facultyId;
-	
+
 	public String getFacultyId() {
 		return facultyId;
 	}
@@ -154,8 +155,6 @@ public class FacultyDTO extends BaseDTO {
 		this.courseName = courseName;
 	}
 
-	
-	
 	public String getCollegeName() {
 		return collegeName;
 	}
@@ -206,7 +205,7 @@ public class FacultyDTO extends BaseDTO {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
+
 	@Override
 	public String getLabel() {
 		// TODO Auto-generated method stub
