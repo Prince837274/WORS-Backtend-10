@@ -19,7 +19,7 @@ public class ProjectOrsApplication {
     private Environment env;
 
     @Autowired
-    FrontCtl frontCtl;
+    FrontCtl FrontCtl;
 
     public static void main(String[] args) {
         SpringApplication.run(ProjectOrsApplication.class, args);

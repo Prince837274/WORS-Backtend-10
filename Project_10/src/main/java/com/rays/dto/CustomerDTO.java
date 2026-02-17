@@ -71,13 +71,13 @@ public class CustomerDTO extends BaseDTO {
 	@Override
 	public String getUniqueKey() {
 		// TODO Auto-generated method stub
-		return null;
+		return "clientName";
 	}
 
 	@Override
 	public String getUniqueValue() {
 		// TODO Auto-generated method stub
-		return null ;
+		return clientName;
 	}
 
 	@Override

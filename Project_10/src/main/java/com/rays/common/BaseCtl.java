@@ -248,7 +248,7 @@ public abstract class BaseCtl<F extends BaseForm, T extends BaseDTO, S extends B
 			System.out.println("237----------->" + dto);
 			if (dto.getId() != null && dto.getId() > 0) {
 				T existDto1 = (T) baseService.findByUniqueKey(dto.getUniqueKey(), dto.getUniqueValue(), userContext);
-				if (existDto1 != null && dto.getId() != existDto1.getId()) {
+			if (existDto1 != null && dto.getId() != existDto1.getId()) { // update 
 					res.addMessage(dto.getLabel() + " already exist");
 					res.setSuccess(false);
 					return res;
