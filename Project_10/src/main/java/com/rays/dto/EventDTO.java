@@ -56,13 +56,13 @@ public class EventDTO  extends BaseDTO{
 	@Override
 	public String getUniqueKey() {
 		// TODO Auto-generated method stub
-		return null;
+		return "eventName";
 	}
 
 	@Override
 	public String getUniqueValue() {
 		// TODO Auto-generated method stub
-		return null;
+		return eventName;
 	}
 
 	@Override
