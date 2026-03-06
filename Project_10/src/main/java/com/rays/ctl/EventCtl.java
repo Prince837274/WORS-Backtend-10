@@ -16,15 +16,21 @@ import com.rays.service.EventServiceInt;
 @RequestMapping(value = "Event")
 public class EventCtl  extends BaseCtl<EventForm, EventDTO, EventServiceInt>{
 
-	@GetMapping("/preload")
 	public ORSResponse preload() {
-		ORSResponse res = new ORSResponse(true);
-		HashMap<Integer, String> map = new HashMap<Integer, String>();
-		map.put(1, "Music Festival");
-		map.put(2, "Tech Conference");
-		map.put(3, "Startup Meetup");
 
-		res.addResult("eventName", map);
-		return res;
+    ORSResponse res = new ORSResponse(true);
+    HashMap<Integer, String> map = new HashMap<Integer, String>();
+
+    map.put(1, "Music Festival");
+    map.put(2, "Tech Conference");
+    map.put(3, "Startup Meetup");
+    map.put(4, "Food Carnival");
+    map.put(5, "Business Summit");
+    map.put(6, "Art Exhibition");
+    map.put(7, "Sports Tournament");
+
+    res.addResult("eventName", map);
+
+    return res;
 }
 }
