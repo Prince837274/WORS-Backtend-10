@@ -23,6 +23,11 @@ public class EmployeeDTO extends BaseDTO {
 	
 	@Column(name = "ADDRESS", length = 50)
 	private String address;
+	
+//	EmployeeDTO(String name, String salary){
+//		this.name = name;
+//		this.salary=salary;
+//	}
 
 	public String getName() {
 		return name;
