@@ -8,23 +8,24 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.rays.common.BaseCtl;
 import com.rays.common.ORSResponse;
-import com.rays.dto.EventDTO;
-import com.rays.form.EventForm;
-import com.rays.service.EventServiceInt;
+import com.rays.dto.JobDTO;
+import com.rays.form.JobForm;
+import com.rays.service.JobServiceInt;
 
 @RestController
-@RequestMapping(value = "Event")
-public class EventCtl  extends BaseCtl<EventForm, EventDTO, EventServiceInt>{
+@RequestMapping(value = "Job")
+public class JobCtl  extends BaseCtl<JobForm, JobDTO, JobServiceInt>{
+	
 
 	@GetMapping("/preload")
 	public ORSResponse preload() {
 		ORSResponse res = new ORSResponse(true);
 		HashMap<Integer, String> map = new HashMap<Integer, String>();
-		map.put(1, "Music Festival");
-		map.put(2, "Tech Conference");
-		map.put(3, "Startup Meetup");
+		map.put(1, "HR");
+		map.put(2, "Software Developer");
+		map.put(3, "Manager");
 
-		res.addResult("eventName", map);
+		res.addResult("position", map);
 		return res;
 }
 }
